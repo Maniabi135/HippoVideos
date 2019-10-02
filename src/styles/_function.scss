@@ -2,6 +2,3 @@
   $min: map-get($breakpoints, $name);
   @return if($min != 0, $min, null);
 }
-@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
-  @return if(breakpoint-min($name, $breakpoints) == null, '', '-#{$name}');
-}
