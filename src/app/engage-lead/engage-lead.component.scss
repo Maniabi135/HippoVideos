@@ -1,0 +1,50 @@
+@import "./../../styles/_varibles";
+@import "./../../styles/_mixins";
+
+.engage-lead {
+  background: #f5f5f5 url("./../../assets/lead.png") no-repeat right;
+  background-size: 120vh 85%;
+  background-attachment: fixed;
+  @media (max-width: 640px) {
+    background-size: 80vh 60%;
+  }
+  text-align: left;
+  .engage-lead-body {
+    display: flex;
+    align-items: center;
+    padding: 30px 10px 30px 50px;
+    @media (max-width: 767px) {
+      padding: 10px;
+    }
+    div {
+      flex: 0 0 50%;
+      max-width: 50%;
+      @media (max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .engage-lead-btn {
+        margin: 20px 0;
+        button {
+          text-transform: uppercase;
+          width: 220px;
+          padding: 13px;
+          background: $orange;
+          font-size: 15.5px;
+          font-weight: normal;
+          line-height: 1.26;
+          color: $btn-color;
+          border: none;
+          background-image: $btn-grad;
+          border-radius: 3px;
+          cursor: pointer;
+          @media (max-width: 640px) {
+            width: 190px;
+            padding: 8px;
+            font-size: 14.5px;
+          }
+        }
+      }
+    }
+  }
+}

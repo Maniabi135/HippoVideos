@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="refer-benifit">
+    <h6>Refer and Benefit</h6>
+    <h2>
+      Refer Hippo Video and Get 600 Personalized Video Emails<br/>Credited to
+      Your Account
+    </h2>
+    <div class="rf-body">
+      <div class="card" [ngClass]="item.class" *ngFor="let item of referBenifit">
+        <img [src]="item.img" />
+        <h4>{{ item.title }}</h4>
+        <ul>
+          <li *ngFor="let point of item.points"><span>{{ point }}</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

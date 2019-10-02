@@ -1,0 +1,47 @@
+$violet: #4a49c9;
+$dark-violet: #4c355f;
+$orange: #f27a5d;
+$fade-orange: #f26b5c;
+$fade-green: #61bf7f;
+$fade-violet: #8d65ab;
+$text-violet: #855ba7;
+$text-orange: #fd7b5f;
+$text-black: #171818;
+$text-black-1: #111;
+$white: #fff;
+$black: #000;
+$nav-head: #0a0a0a;
+$nav-highlight-text: #665fc4;
+$nav-color: #050505;
+$text-highlight: #111;
+$list-text: #100f0f;
+$placeholder: #686868;
+$light-black: #252525;
+$nav-bg: #f9f7ff;
+$light-text: #838383;
+$btn-grad: linear-gradient(110deg, #fc6076, #ff9a44);
+$btn-color: #fefefe;
+$blue: #02d0d1;
+$bor-color: #6fabe7;
+// FONT
+
+$open-sans: 'Open Sans', sans-serif;
+
+// Grid Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+) !default;
+
+$grid-gutter-width: 30px !default;
+

@@ -1,0 +1,92 @@
+@import "./../../styles/_varibles";
+@import "./../../styles/_mixins";
+
+nav {
+  position: relative;
+  .top-nav {
+    height: 66px;
+    @media (max-width: 767px) {
+      height: 56px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navIcon {
+      display: none;
+    }
+    .hippo-logo{
+      width: 103px;
+      @media (min-width: 820px)  and (max-width: 992px) {
+        width: 80px;
+      }
+    }
+    @media (max-width: 820px) {
+      .navIcon {
+        display: block;
+        width: 38px;
+        float: right;
+        height: 28px;
+        cursor: pointer;
+      }
+      #nav{
+        display: none;
+      }
+    }
+    ul {
+      display: block;
+      @include list-style();
+      display: flex;
+      li {
+        font-size: 14px;
+        @media (min-width: 820px)  and (max-width: 991px) {
+          font-size: 12px;
+        }
+        @media (min-width: 992px)  and (max-width: 1080px) {
+          font-size: 13px;
+        }
+        text-transform: capitalize;
+        &:not(:last-child) {
+          margin-right: 32px;
+          @media (min-width: 820px)  and (max-width: 992px) {
+            margin-right: 10px;
+          }
+          @media (min-width: 992px)  and (max-width: 1080px) {
+            margin-right: 24px;
+          }
+        }
+        i {
+          transform: rotate(90deg);
+          font-size: 16px;
+          vertical-align: middle;
+        }
+        a {
+          height: 32px;
+          line-height: 32px;
+          @include a-link($nav-color);
+          &.nav-active {
+            padding: 7px 0;
+            color: $violet;
+            border-bottom: 2px solid $violet;
+          }
+        }
+        .start-btn {
+          background: $orange;
+          width: 120px;
+          @include a-link($btn-color);
+          padding: 7px 20px;
+          border-radius: 3px;
+          background-image: $btn-grad;
+          border: 1px solid transparent;
+          @media (min-width: 820px)  and (max-width: 992px) {
+            width: 90px;
+            padding: 7px 10px;
+          }
+          @media (min-width: 992px)  and (max-width: 1080px) {
+            width: 100px;
+            padding: 7px 15px;
+          }
+        }
+      }
+    }
+  }
+}

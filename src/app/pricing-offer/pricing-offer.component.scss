@@ -1,0 +1,17 @@
+@import "./../../styles/_varibles";
+@import "./../../styles/_mixins";
+
+.pricing-offer{
+  background-image: linear-gradient(297deg, #fb5854, #fb9b4d), linear-gradient(to bottom, #855ba7, #855ba7);
+  color: $white;
+  h2 {
+    color: $white;
+  }
+  p{
+    margin: 5px 0; 
+    font-size: 16px;
+    @media (max-width: 640px) {
+      font-size: 14px
+    }
+  }
+}

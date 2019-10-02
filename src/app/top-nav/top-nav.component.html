@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <nav>
+      <div class="top-nav">
+        <img src="./../../assets/navbar_icon.png" class="navIcon" id="navMenu" (click)="menuIcon($event)"/>
+        <div>
+          <img src="./../../assets/logo.png" class="hippo-logo">
+        </div>
+        <ul id="nav">
+          <li *ngFor="let item of topNav">
+            <a href="{{item.url}}" [ngClass]="{'nav-active': item.class}">
+              {{item.name}}
+              <i *ngIf="item.arrow" class="material-icons">arrow_right</i>
+            </a>
+          </li>
+          <li>
+            <a class="start-btn" href="#">START CREATING</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+</div>
